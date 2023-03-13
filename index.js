@@ -44,7 +44,9 @@ function parseHtml(parser, classString, callBackFunc) {
     console.log(`Parser not correctly working.\nError:${e}`);
   }
 }
-
+app.get("/",(req,res) => {
+  res.send("Hi Please add a route to home. [/indexAsia] or [/indexEuropeOther] or [/indexAmerica]");
+})
 app.get("/[Ii]ndex[Aa]merica", async (req, res) => {
   try {
     indizes = [];
